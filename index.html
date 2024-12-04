@@ -42,12 +42,12 @@
 
         <!-- route path -->
         <section class="mt-9 flex justify-center items-center gap-4">
-            <button class="bg-[#B4F461] p-4 rounded-lg">Donation</button>
-            <button class="p-4 rounded-lg  border-2">History</button>
+            <button id="route-Donation" class="bg-[#B4F461] p-4 rounded-lg">Donation</button>
+            <button id="route-History" class="p-4 rounded-lg  border-2">History</button>
         </section>
 
         <!-- donate section -->
-        <section class="mt-9 max-w-6xl mx-auto">
+        <section id="blog" class="mt-9 max-w-6xl mx-auto">
             <div class="grid grid-cols-1 gap-2 lg:flex items-center justify-around border rounded-lg p-3 mb-4">
                 <div class="lg:w-1/2">
                     <img src="assets/feni.png" alt="">
@@ -159,7 +159,7 @@
         </section>
 
         <!-- append section -->
-        <section class="hidden">
+        <section id="history" class="hidden">
             <div id="donate-history">
 
             </div>
@@ -167,6 +167,7 @@
     </main>
     <script src="js/function.js"></script>
     <script src="js/donate.js"></script>
+    <script src="js/route.js"></script>
 </body>
 
 </html>

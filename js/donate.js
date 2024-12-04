@@ -31,3 +31,11 @@ document.getElementById('Quota-Movement-btn').addEventListener('click', function
     document.getElementById('Quota-Movement-filed').value = '';
     document.getElementById('total-donation').innerText = totalDonation + totalDonate1 ;
 });
+
+
+document.getElementById('route-History').addEventListener('click', function(){
+    showSectionById('history');
+});
+document.getElementById('route-Donation').addEventListener('click', function(){
+    showSectionById('blog');
+});
