@@ -10,3 +10,7 @@ function textTypeId(id){
    const convertValue = parseFloat(getText); 
    return convertValue;
 }
+function textType(id){
+   const getText = document.getElementById(id).innerText;
+   return getText;
+}
