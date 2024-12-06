@@ -9,7 +9,7 @@ document
     document.getElementById("Flood-donate").innerText = donate;
     document.getElementById("FloodDonate-filed").value = "";
     document.getElementById("total-donation").innerText =
-      totalDonation + donate;
+      totalDonation - donate;
 
     // append item
     const FloodAtNoakhali = textType("blog-1");
@@ -22,7 +22,7 @@ document
                 </div>
     `;
     document.getElementById("donate-history").appendChild(contain);
-    if(isNaN(FloodDonate)){
+    if(isNaN(FloodDonate) ){
       alert('Please Provided valid Taka');
       return;
     } 
@@ -42,7 +42,7 @@ document
     document.getElementById("Flood-Relief").innerText = donate2;
     document.getElementById("Flood-Relief-filed").value = "";
     document.getElementById("total-donation").innerText =
-      totalDonation + donate2;
+      totalDonation - donate2;
 
     // append item
     const ReliefInFeni = textType("blog-2");
@@ -76,7 +76,7 @@ document
     document.getElementById("donate-Quota").innerText = totalDonate1;
     document.getElementById("Quota-Movement-filed").value = "";
     document.getElementById("total-donation").innerText =
-      totalDonation + totalDonate1;
+      totalDonation - totalDonate1;
 
     // append item
     const QuotaMovement = textType("blog-3");
@@ -99,13 +99,18 @@ document
    }
   });
 
-document.getElementById("route-History").addEventListener("click", function () {
+const historyElement = document.getElementById("route-History");
+const donation = document.getElementById("route-Donation");
+
+historyElement.addEventListener("click", function () {
    showSectionById("history");
+   historyElement.classList.add('bg-[#B4F461]', 'border-none');
+   donation.classList.remove('bg-[#B4F461]');
 });
 
-document
-  .getElementById("route-Donation")
-  .addEventListener("click", function () {
-    showSectionById("blog");
-   
-  });
+donation.addEventListener("click", function () {
+   showSectionById("blog");
+   donation.classList.add('bg-[#B4F461]', 'border-none');
+   historyElement.classList.remove('bg-[#B4F461]');
+});
+
