@@ -22,6 +22,14 @@ document
                 </div>
     `;
     document.getElementById("donate-history").appendChild(contain);
+    if(isNaN(FloodDonate)){
+      alert('Please Provided valid Taka');
+      return;
+    } 
+   if(currentDonate < FloodDonate){
+      alert('Not Acceptable');
+      return;
+   }
   });
 document
   .getElementById("Flood-Relief-btn")
@@ -47,6 +55,14 @@ document
                 </div>
     `;
     document.getElementById("donate-history").appendChild(contain);
+    if(isNaN(FloodReliefDonate)){
+      alert('Please Provided valid Taka');
+      return;
+    } 
+   if(currentDonate2 < FloodDonate){
+      alert('Not Acceptable');
+      return;
+   }
   });
 document
   .getElementById("Quota-Movement-btn")
@@ -73,6 +89,14 @@ document
                 </div>
     `;
     document.getElementById("donate-history").appendChild(contain);
+    if(isNaN(quotaMovementDonate)){
+      alert('Please Provided valid Taka');
+      return;
+    } 
+   if(currentDonate < quotaMovementDonate){
+      alert('Not Acceptable');
+      return;
+   }
   });
 
 document.getElementById("route-History").addEventListener("click", function () {
