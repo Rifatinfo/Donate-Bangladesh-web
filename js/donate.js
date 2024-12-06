@@ -26,7 +26,7 @@ document
       alert('Please Provided valid Taka');
       return;
     } 
-   if(currentDonate < FloodDonate){
+   if(currentDonate > FloodDonate){
       alert('Not Acceptable');
       return;
    }
@@ -93,17 +93,19 @@ document
       alert('Please Provided valid Taka');
       return;
     } 
-   if(currentDonate < quotaMovementDonate){
+   if(currentDonate > quotaMovementDonate){
       alert('Not Acceptable');
       return;
    }
   });
 
 document.getElementById("route-History").addEventListener("click", function () {
-  showSectionById("history");
+   showSectionById("history");
 });
+
 document
   .getElementById("route-Donation")
   .addEventListener("click", function () {
     showSectionById("blog");
+   
   });
