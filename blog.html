@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <section class="bg-[#FFEEE6] lg:py-5">
+                <nav class="lg:max-w-6xl mx-auto">
+                    <div class="navbar">
+                        <div class="navbar-start">
+                            <div class="dropdown">
+                                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6h16M4 12h8m-8 6h16" />
+                                    </svg>
+                                </div>
+                                <ul tabindex="0"
+                                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2">
+                            </div>
+                            <a href="index.html" class="btn btn-ghost text-xl bg-[#B4F461]">Home</a>
+                        </div>
+                        <div class="navbar-center hidden lg:flex gap-3">
+                            <img src="assets/logo.png" alt="">
+                            <p class="text-xl font-semibold">Donate Bangladesh</p>
+                        </div>
+                        <div class="navbar-end space-x-2">
+                            <img src="assets/coin.png" alt="">
+                            <p class="text-xl font-semibold"><span id="total-donation">0 </span> BDT</p>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </header>
+
+        <!-- accordion -->
+         <section class="max-w-6xl mx-auto mt-8">
+            <div class="collapse collapse-plus bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is donation in Bangladesh?</div>
+                <div class="collapse-content">
+                  <p>Donation in Bangladesh refers to the act of giving money, goods, or services to help those in need or support charitable causes within the country.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">How can I make a donation in Bangladesh?</div>
+                <div class="collapse-content">
+                  <p>Donations in Bangladesh can be made through various online platforms, local charities, or directly to individuals or organizations that are working for social causes.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">Why should I donate in Bangladesh?</div>
+                <div class="collapse-content">
+                  <p>Donating in Bangladesh helps support underprivileged communities, address urgent needs such as healthcare and education, and contribute to the overall welfare of the society.</p>
+                </div>
+              </div>
+              
+         </section>
+    </main>
+</body>
+</html>
